@@ -1,0 +1,21 @@
+实验一结果：
+Epoch 1/5
+844/844 [==============================] - 11s 13ms/step - loss: 0.4464 - accuracy: 0.8447 - val_loss: 0.3298 - val_accuracy: 0.8855
+Epoch 2/5
+844/844 [==============================] - 12s 14ms/step - loss: 0.3023 - accuracy: 0.8930 - val_loss: 0.3079 - val_accuracy: 0.8882
+Epoch 3/5
+844/844 [==============================] - 11s 13ms/step - loss: 0.2590 - accuracy: 0.9070 - val_loss: 0.2687 - val_accuracy: 0.9067
+Epoch 4/5
+844/844 [==============================] - 11s 13ms/step - loss: 0.2291 - accuracy: 0.9165 - val_loss: 0.2621 - val_accuracy: 0.9073
+Epoch 5/5
+844/844 [==============================] - 10s 12ms/step - loss: 0.2042 - accuracy: 0.9264 - val_loss: 0.2626 - val_accuracy: 0.9072
+313/313 [==============================] - 1s 3ms/step - loss: 0.2730 - accuracy: 0.9016
+Test accuracy: 0.9016000032424927
+
+
+实验二结果：
+
+
+
+
+实验三结果：
