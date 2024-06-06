@@ -1,0 +1,55 @@
+import tensorflow as tf
+from tensorflow.keras import layers, models, datasets
+import numpy as np
+
+# 加载 FashionMNIST 数据集
+(train_images, train_labels), (test_images, test_labels) = datasets.fashion_mnist.load_data()
+
+# 数据预处理：将像素值缩放到 [0, 1] 之间，并增加一个通道维度
+train_images = train_images.reshape(-1, 28, 28, 1) / 255.0
+test_images = test_images.reshape(-1, 28, 28, 1) / 255.0
+
+# 对照组：浅层模型（学习率为默认的 0.001）
+shallow_model = models.Sequential([
+    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
+    layers.MaxPooling2D((2, 2)),
+    layers.Flatten(),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(10, activation='softmax')
+])
+shallow_model.compile(optimizer='adam',
+                      loss='sparse_categorical_crossentropy',
+                      metrics=['accuracy'])
+shallow_model.fit(train_images, train_labels, epochs=10, batch_size=128, validation_split=0.1)
+shallow_test_loss, shallow_test_acc = shallow_model.evaluate(test_images, test_labels)
+print('浅层模型测试集准确率:', shallow_test_acc)
+
+# 实验组 1：学习率为 0.01
+exp1_model = models.Sequential([
+    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
+    layers.MaxPooling2D((2, 2)),
+    layers.Flatten(),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(10, activation='softmax')
+])
+exp1_model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.01),
+                   loss='sparse_categorical_crossentropy',
+                   metrics=['accuracy'])
+exp1_model.fit(train_images, train_labels, epochs=10, batch_size=128, validation_split=0.1)
+exp1_test_loss, exp1_test_acc = exp1_model.evaluate(test_images, test_labels)
+print('实验组 1 模型测试集准确率:', exp1_test_acc)
+
+# 实验组 2：学习率为 0.0001
+exp2_model = models.Sequential([
+    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
+    layers.MaxPooling2D((2, 2)),
+    layers.Flatten(),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(10, activation='softmax')
+])
+exp2_model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001),
+                   loss='sparse_categorical_crossentropy',
+                   metrics=['accuracy'])
+exp2_model.fit(train_images, train_labels, epochs=10, batch_size=128, validation_split=0.1)
+exp2_test_loss, exp2_test_acc = exp2_model.evaluate(test_images, test_labels)
+print('实验组 2 模型测试集准确率:', exp2_test_acc)
