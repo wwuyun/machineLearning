@@ -14,7 +14,75 @@ Test accuracy: 0.9016000032424927
 
 
 实验二结果：
-
+Epoch 1/10
+422/422 [==============================] - 20s 45ms/step - loss: 0.4982 - accuracy: 0.8236 - val_loss: 0.3752 - val_accuracy: 0.8638
+Epoch 2/10
+422/422 [==============================] - 13s 32ms/step - loss: 0.3223 - accuracy: 0.8862 - val_loss: 0.3103 - val_accuracy: 0.8888
+Epoch 3/10
+422/422 [==============================] - 15s 37ms/step - loss: 0.2791 - accuracy: 0.9005 - val_loss: 0.2805 - val_accuracy: 0.9003
+Epoch 4/10
+422/422 [==============================] - 14s 32ms/step - loss: 0.2531 - accuracy: 0.9088 - val_loss: 0.2770 - val_accuracy: 0.9008
+Epoch 5/10
+422/422 [==============================] - 14s 34ms/step - loss: 0.2325 - accuracy: 0.9148 - val_loss: 0.2660 - val_accuracy: 0.9055
+Epoch 6/10
+422/422 [==============================] - 14s 33ms/step - loss: 0.2151 - accuracy: 0.9225 - val_loss: 0.2572 - val_accuracy: 0.9067
+Epoch 7/10
+422/422 [==============================] - 14s 34ms/step - loss: 0.2004 - accuracy: 0.9276 - val_loss: 0.2625 - val_accuracy: 0.9075
+Epoch 8/10
+422/422 [==============================] - 18s 43ms/step - loss: 0.1849 - accuracy: 0.9332 - val_loss: 0.2570 - val_accuracy: 0.9070
+Epoch 9/10
+422/422 [==============================] - 17s 41ms/step - loss: 0.1754 - accuracy: 0.9368 - val_loss: 0.2521 - val_accuracy: 0.9097
+Epoch 10/10
+422/422 [==============================] - 14s 32ms/step - loss: 0.1648 - accuracy: 0.9405 - val_loss: 0.2621 - val_accuracy: 0.9055
+313/313 [==============================] - 1s 5ms/step - loss: 0.2694 - accuracy: 0.9028
+浅层模型测试集准确率: 0.9028000235557556
+Epoch 1/10
+422/422 [==============================] - 39s 89ms/step - loss: 0.5951 - accuracy: 0.7871 - val_loss: 0.4070 - val_accuracy: 0.8557
+Epoch 2/10
+422/422 [==============================] - 31s 73ms/step - loss: 0.3764 - accuracy: 0.8653 - val_loss: 0.3563 - val_accuracy: 0.8710
+Epoch 3/10
+422/422 [==============================] - 36s 85ms/step - loss: 0.3312 - accuracy: 0.8808 - val_loss: 0.3359 - val_accuracy: 0.8827
+Epoch 4/10
+422/422 [==============================] - 28s 65ms/step - loss: 0.3019 - accuracy: 0.8911 - val_loss: 0.3087 - val_accuracy: 0.8883
+Epoch 5/10
+422/422 [==============================] - 20s 48ms/step - loss: 0.2809 - accuracy: 0.8983 - val_loss: 0.3026 - val_accuracy: 0.8925
+Epoch 6/10
+422/422 [==============================] - 19s 46ms/step - loss: 0.2589 - accuracy: 0.9061 - val_loss: 0.2822 - val_accuracy: 0.8960
+Epoch 7/10
+422/422 [==============================] - 19s 46ms/step - loss: 0.2430 - accuracy: 0.9124 - val_loss: 0.2876 - val_accuracy: 0.8938
+Epoch 8/10
+422/422 [==============================] - 17s 41ms/step - loss: 0.2266 - accuracy: 0.9185 - val_loss: 0.2673 - val_accuracy: 0.9033
+Epoch 9/10
+422/422 [==============================] - 20s 46ms/step - loss: 0.2153 - accuracy: 0.9217 - val_loss: 0.2458 - val_accuracy: 0.9133
+Epoch 10/10
+422/422 [==============================] - 20s 47ms/step - loss: 0.2009 - accuracy: 0.9267 - val_loss: 0.2512 - val_accuracy: 0.9102
+313/313 [==============================] - 1s 5ms/step - loss: 0.2653 - accuracy: 0.9061
+中等深度模型测试集准确率: 0.9060999751091003
+Epoch 1/10
+422/422 [==============================] - 25s 59ms/step - loss: 0.7451 - accuracy: 0.7339 - val_loss: 0.5229 - val_accuracy: 0.8050
+Epoch 2/10
+422/422 [==============================] - 29s 69ms/step - loss: 0.4850 - accuracy: 0.8248 - val_loss: 0.4792 - val_accuracy: 0.8260
+Epoch 3/10
+422/422 [==============================] - 20s 48ms/step - loss: 0.4240 - accuracy: 0.8443 - val_loss: 0.3956 - val_accuracy: 0.8552
+Epoch 4/10
+422/422 [==============================] - 22s 51ms/step - loss: 0.3852 - accuracy: 0.8603 - val_loss: 0.3698 - val_accuracy: 0.8662
+Epoch 5/10
+422/422 [==============================] - 21s 50ms/step - loss: 0.3567 - accuracy: 0.8701 - val_loss: 0.3670 - val_accuracy: 0.8668
+Epoch 6/10
+422/422 [==============================] - 23s 54ms/step - loss: 0.3347 - accuracy: 0.8783 - val_loss: 0.3431 - val_accuracy: 0.8770
+Epoch 7/10
+422/422 [==============================] - 24s 56ms/step - loss: 0.3126 - accuracy: 0.8870 - val_loss: 0.3594 - val_accuracy: 0.8670
+Epoch 8/10
+422/422 [==============================] - 24s 58ms/step - loss: 0.2955 - accuracy: 0.8913 - val_loss: 0.3141 - val_accuracy: 0.8865
+Epoch 9/10
+422/422 [==============================] - 23s 54ms/step - loss: 0.2800 - accuracy: 0.8983 - val_loss: 0.3107 - val_accuracy: 0.8872
+Epoch 10/10
+422/422 [==============================] - 22s 53ms/step - loss: 0.2644 - accuracy: 0.9030 - val_loss: 0.3780 - val_accuracy: 0.8633
+313/313 [==============================] - 2s 6ms/step - loss: 0.3991 - accuracy: 0.8564
+深层模型测试集准确率: 0.8564000129699707
+浅层模型的测试集准确率: 0.9028000235557556
+中等深度模型的测试集准确率: 0.9060999751091003
+深层模型的测试集准确率: 0.8564000129699707
 
 
 
